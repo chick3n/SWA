@@ -33,11 +33,12 @@ namespace SWA.Application.SiteCollections.Commands
                 Name = request.Name,
                 Url = request.Url,
                 SharepointType = request.SharepointType,
-                Created = DateTime.UtcNow,
                 Enabled = true
             };
 
             _context.SiteCollections.Add(entity);
+
+            await _context.SaveChangesAsync(cancellationToken);
 
             return entity.Id;
         }
