@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SWA.Application.SiteCollections.Commands
+namespace SWA.Application.SiteCollections.Commands.CreateSiteCollection
 {
     public class CreateSiteCollectionCommand : IRequest<int>
     {

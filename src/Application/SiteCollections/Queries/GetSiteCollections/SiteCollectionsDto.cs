@@ -11,6 +11,7 @@ namespace SWA.Application.SiteCollections.Queries.GetSiteCollections
         public string Name { get; set; }
         public string Url { get; set; }
         public Domain.Enums.SharePointType SharepointType { get; set; }
+        public bool Enabled { get; set; }
         
     }
 }

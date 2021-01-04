@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SWA.Application.SiteCollections.Commands
+namespace SWA.Application.SiteCollections.Commands.CreateSiteCollection
 {
     public class CreateSiteCollectionCommandValidator : AbstractValidator<CreateSiteCollectionCommand>
     {
