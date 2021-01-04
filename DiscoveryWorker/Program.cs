@@ -1,3 +1,4 @@
+using DiscoveryWorker.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SWA.Application;
@@ -20,9 +21,10 @@ namespace DiscoveryWorker
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
-                    services.AddHostedService<Worker>();
                     services.AddApplication();
                     services.AddInfrastructure(hostContext.Configuration);
+                    services.AddHostedService<Worker>();
+                    services.AddTransient<DiscoveryBot>();
                 });
     }
 }
