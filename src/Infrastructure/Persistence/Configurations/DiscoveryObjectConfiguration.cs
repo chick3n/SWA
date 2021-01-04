@@ -26,7 +26,7 @@ namespace SWA.Infrastructure.Persistence.Configuration
             builder.Property(x => x.SiteName)
                 .IsRequired();
 
-            builder.Property(x => x.Url)
+            builder.Property(x => x.RelativePath)
                 .IsRequired();
 
             builder.Property(x => x.DiscoveryType)

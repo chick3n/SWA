@@ -24,10 +24,6 @@ namespace SWA.Infrastructure.Persistence.Configuration
 
             builder.Property(x => x.Url)
                 .IsRequired();
-
-            builder.Property(x => x.CreatedOn)
-                .IsRequired()
-                .HasDefaultValueSql("getdate()");
         }
     }
 }
